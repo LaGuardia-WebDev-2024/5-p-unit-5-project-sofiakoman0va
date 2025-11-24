@@ -21,10 +21,76 @@ Select TWO Additional Features to Add
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
+    #gerbilbaby {
+      background: white;
+      border: 1px solid rgb(158, 49, 49);
+    }
 
+    .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
   </style>
 </head>
-<body>
+<body style="background-image:url(https://i.pinimg.com/736x/15/fb/75/15fb75c769ed7e81026f46c12c716880.jpg")>
+  <h1>You're invited to the Gerbil Party!!!</h1>
+ 
+  <img src="https://i.pinimg.com/1200x/e4/15/a9/e415a9700560d3ea0d1e3f37eb85c5ed.jpg" width="500px">
+
+  <h3>There will be many breeds available</h3>
+  <div id="gerbilbaby">
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.pinimg.com/736x/3b/be/cf/3bbecf9ac37a21d6a893315a7819910a.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Agouti</h1>
+      <p>The color of a wild gerbil</p>
+      <p>We love that guy</p>
+      <p>Take it home</p>
+    </div>
+  </div>
+</div>
+    
+
+
+  </div>
 
  
 
