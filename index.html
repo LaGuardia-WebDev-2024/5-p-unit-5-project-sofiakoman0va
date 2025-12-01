@@ -32,6 +32,12 @@ Select TWO Additional Features to Add
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    #title {
+      outline: 5px dotted rgb(18, 122, 34);
+      width:fit-content;
+    }
+
+
     .flip-card {
   background-color: transparent;
   width: 300px;
@@ -73,15 +79,42 @@ Select TWO Additional Features to Add
 }
 
 #pics {
-  display: flex;
-  justify-items:center;
+  display:flex;
+  justify-items: space-between;
   margin-left: 10px;
+}
+
+#pic-item {
+  justify-items:right;
+
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-300px 0 0 70px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
 }
 
   </style>
 </head>
 <body style="background-image:url(https://i.pinimg.com/736x/27/a6/dc/27a6dcecc1a77a33128041297f6d9bbd.jpg");>
-  <h1>You're invited to the Gerbil Party!!!</h1>
+  <h1 id="title">You're invited to the Gerbil Party!!!</h1>
 
   <div id="partyinvite">
      <p>
@@ -90,24 +123,31 @@ Select TWO Additional Features to Add
     </p>
 
     <p>
-      <span>The dresscode is formal. Wear your suits and gowns. The gerbils will appreciate it.
+      <span>The dresscode is formal. Wear your suits and gowns. The gerbils have high standards.
       </span>
     </p>
   </div>
 
   <div id="pics">
-    <img src="https://i.pinimg.com/1200x/e4/15/a9/e415a9700560d3ea0d1e3f37eb85c5ed.jpg" width="500px">
-    <img src="https://media.tenor.com/NB_mHy8OLHAAAAAM/litty-mlg.gif">
+    <img 
+    src="https://i.pinimg.com/1200x/e4/15/a9/e415a9700560d3ea0d1e3f37eb85c5ed.jpg" width="700px">
+    
+    <img 
+    src="https://media.tenor.com/NB_mHy8OLHAAAAAM/litty-mlg.gif" 
+    style="width:300px;height:300px"
+    id="pic-item"
+    alt=""> 
+    
  </div>
   
 
-  <h3>There will be many breeds available: Pick your gerbil</h3>
+  <h3 id="title">There will be many breeds available: Pick your gerbil</h3>
 
   <div id="gerbilbaby">
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Golden_Agouti_Male_4-1-05.jpg"Avatar" style="width:300px;height:300px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Golden_Agouti_Male_4-1-05.jpg"Avatar" style="width:300px;height:300px;margin-bottom: 50px;">
     </div>
     <div class="flip-card-back">
       <h1>Agouti</h1>
