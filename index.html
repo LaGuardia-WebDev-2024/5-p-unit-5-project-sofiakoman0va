@@ -21,11 +21,24 @@ Select TWO Additional Features to Add
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
+
     #gerbilbaby {
       display: flex;
       justify-items: space-evenly;
       overflow:auto;
-      margin-left: 10px;
+       margin-left: 10px;
+    }
+
+    .gerbil-container {
+      background: rgba(255, 254, 217, 0);
+       border: 5px solid rgb(18, 122, 34);
+       width:fit-content;
+       padding: 15px;
+    }
+
+    .gerbilbreeds {
+      background:rgb(18, 122, 34)
+      border: 5px pink;
     }
 
     body {
@@ -35,6 +48,10 @@ Select TWO Additional Features to Add
     #title {
       outline: 5px dotted rgb(18, 122, 34);
       width:fit-content;
+    }
+
+    .text {
+      font-size: 1.5em;
     }
 
 
@@ -73,7 +90,7 @@ Select TWO Additional Features to Add
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #e81574;
   color: white;
   transform: rotateY(180deg);
 }
@@ -87,12 +104,13 @@ Select TWO Additional Features to Add
 #pic-item {
   justify-items:right;
 
+
   position: absolute;
     top: 50%;
     left: 50%;
     width: 120px;
     height: 120px;
-    margin:-300px 0 0 70px;
+    margin:-240px 0 0 70px;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
@@ -118,12 +136,11 @@ Select TWO Additional Features to Add
 
   <div id="partyinvite">
      <p>
-      <span>It's at 10:30 pm on January Gerbilfirst, 2053. Be there! There will be snacks, music, and gerbils. 
-      </span>
+      <span class="text">It's at 10:30 pm on January Gerbilfirst, 2053.</span> Be there! There will be snacks, music, and gerbils. 
     </p>
 
     <p>
-      <span>The dresscode is formal. Wear your suits and gowns. The gerbils have high standards.
+      The dresscode is formal. Wear your suits and gowns. The gerbils have <span class="text">high standards.
       </span>
     </p>
   </div>
@@ -143,11 +160,14 @@ Select TWO Additional Features to Add
 
   <h3 id="title">There will be many breeds available: Pick your gerbil</h3>
 
+  <div class="gerbil-container">
+
+
   <div id="gerbilbaby">
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Golden_Agouti_Male_4-1-05.jpg"Avatar" style="width:300px;height:300px;margin-bottom: 50px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Golden_Agouti_Male_4-1-05.jpg"Avatar" style="width:300px;height:300px;margin-bottom: 50px;class:gerbilbreeds">
     </div>
     <div class="flip-card-back">
       <h1>Agouti</h1>
@@ -162,7 +182,7 @@ Select TWO Additional Features to Add
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://static.wixstatic.com/media/43afc2_41da776894cd4e30b1cde98259cdfc03~mv2_d_1823_1822_s_2.jpg/v1/fill/w_260,h_260,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/43afc2_41da776894cd4e30b1cde98259cdfc03~mv2_d_1823_1822_s_2.jpg"Avatar" style="width:300px;height:300px;">
+      <img src="https://static.wixstatic.com/media/43afc2_41da776894cd4e30b1cde98259cdfc03~mv2_d_1823_1822_s_2.jpg/v1/fill/w_260,h_260,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/43afc2_41da776894cd4e30b1cde98259cdfc03~mv2_d_1823_1822_s_2.jpg"Avatar" style="width:300px;height:300px;class:gerbilbreeds">
     </div>
     <div class="flip-card-back">
       <h1>Argente Golden</h1>
@@ -177,7 +197,7 @@ Select TWO Additional Features to Add
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://shootingstargerbils.com/pics/genetics/azure-slater.jpg"Avatar" style="width:300px;height:300px;">
+      <img src="https://shootingstargerbils.com/pics/genetics/azure-slater.jpg"Avatar" style="width:300px;height:300px;class:gerbilbreeds">
     </div>
     <div class="flip-card-back">
       <h1>Slate</h1>
@@ -192,7 +212,7 @@ Select TWO Additional Features to Add
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://gerbilhub.com/wp-content/uploads/2020/05/99130355_1169780330025132_1588489909214117888_n.jpg"Avatar" style="width:300px;height:300px;">
+      <img src="https://gerbilhub.com/wp-content/uploads/2020/05/99130355_1169780330025132_1588489909214117888_n.jpg"Avatar" style="width:300px;height:300px;class:gerbilbreeds">
     </div>
     <div class="flip-card-back">
       <h1>Pink Eyed White</h1>
@@ -204,6 +224,7 @@ Select TWO Additional Features to Add
 </div>
 </div>
 
+</div>
 
 
 </body>
